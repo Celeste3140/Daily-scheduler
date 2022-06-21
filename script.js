@@ -22,7 +22,19 @@ var m = moment();
         localStorage.setItem(time,value)
     })
 
-    
+    function rowColor() {
+        var time = moment().hours();
+        $(".time-block").each(function() {
+            var currenthr = parseInt($(this).attr("id"));
+            if (currenthr > hour) {
+                $(this).addClass("future");
+            } else if (currenthr === hour) {
+                $(this).addClass("present");
+            } else {
+                $(this).addClass("past");
+            }
+        })
+    };
  
 
 
