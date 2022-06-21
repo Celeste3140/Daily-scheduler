@@ -24,10 +24,15 @@ body {
     border-bottom: 10px dotted rgb(64,60,55);
   }
   
-  .text {
+  textarea {
     white-space: pre-wrap;
     background-color: rgb(246,244,238);
     border: #000000;
+  }
+  .time {
+    padding: 10px;
+    font-size: 20px;
+    display: block;
   }
   
   .time-block{
@@ -36,9 +41,8 @@ body {
   }
   
   .row {
-    white-space: pre-wrap;
     height: 80px;
-    border-top: 1px solid white;;
+    border: 1px solid rgb(64,60,55);
   }
   
   .hour {
