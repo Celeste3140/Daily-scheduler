@@ -1,6 +1,6 @@
 # Daily-scheduler
 
-
+Online daily 9-5 work schedule. Saves users text input into local storage and text will remain even after a page refresh. Live local time is located at top of page aswell for convience. Text rows are also color coordinated to indicated whether that specific time block is in the past, present or future. 
 
 deployable link: https://celeste3140.github.io/Daily-work-scheduler/
 
