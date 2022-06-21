@@ -57,12 +57,12 @@ body {
   }
   
   .present {
-    background-color: #ff6961;
+    background-color: rgb(235,195,179);
     color: white;
   }
   
   .future {
-    background-color: #77dd77;
+    background-color: #afdbaf;
     color: white;
   }
   

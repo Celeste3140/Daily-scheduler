@@ -1,5 +1,9 @@
-var reformatDate = moment("11/3/20", "MM-DD-YY").format("dddd, MMMM Do YYYY, h:mm:ss a");
-$("#3a").text(reformatDate);
+var displayTime = document.querySelector("#currentDay");
+
+var currentTime = moment();
+
+displayTime.textContent = currentTime.format("dddd, MMMM Do YYYY, h:mm:ss a")
+var m = moment();
 
     $("#hour8 .text").val(localStorage.getItem("hour8"));
     $("#hour9 .text").val(localStorage.getItem("hour9"));
@@ -18,19 +22,7 @@ $("#3a").text(reformatDate);
         localStorage.setItem(time,value)
     })
 
-    function rowColor () {
-        var hour = moment().hours();
-        $(".time-block").each(function() {
-            var currHour = parseInt($(this).attr("id"));
     
-            // console.log(this); //each time-block
-    
-            if (currHour > hour) {
-                $(this).addClass("future");
-            } else if (currHour === hour) {
-                $(this).addClass("present");
-            } else {
-                $(this).addClass("past");
-            }
-        })
-    };
+ 
+
+
